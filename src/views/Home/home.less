@@ -1,0 +1,521 @@
+.home {
+  padding-bottom: 1.5rem;
+  position: relative;
+  background-color: #0e0e0e;
+  padding-top: 0.5rem;
+
+  .top {
+    width: 11rem;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: -2rem;
+    position: relative;
+    top: 0;
+    transition: all 0.3s linear;
+    cursor: default;
+    &:hover {
+      top: -0.2rem;
+    }
+    h1 {
+      font-size: 0.5rem;
+      margin-bottom: 0;
+      color: #fff;
+      text-shadow: 0rem 0rem 0.1rem #17caa5;
+    }
+    p {
+      font-size: 0.2rem;
+      color: #fff;
+      margin-bottom: 0;
+    }
+  }
+  .we_want {
+    width: 11rem;
+    height: 6.5rem;
+    margin: 0 auto;
+    display: flex;
+    background: url("../../assets/img/home/wewant.png");
+    background-size: 100% 100%;
+    position: relative;
+
+    .box {
+      width: 1.9rem;
+      font-size: 0.16rem;
+      color: #fff;
+      text-shadow: 0rem 0rem 0.2rem #17caa5;
+      text-align: center;
+      cursor: default;
+      transition: all 0.3s linear;
+    }
+    .cost {
+      position: absolute;
+      left: 20%;
+      top: 5%;
+      &:hover {
+        top: 4%;
+      }
+    }
+    .latency {
+      position: absolute;
+      left: 30%;
+      top: 10%;
+      &:hover {
+        top: 9%;
+      }
+    }
+    .massive {
+      position: absolute;
+      left: 40%;
+      top: 0%;
+      &:hover {
+        top: 1%;
+      }
+    }
+    .security {
+      position: absolute;
+      right: 0%;
+      top: 5%;
+      &:hover {
+        top: 4%;
+      }
+    }
+    .operation {
+      position: absolute;
+      right: 10%;
+      top: 20%;
+      &:hover {
+        top: 19%;
+      }
+    }
+    .colla {
+      position: absolute;
+      left: 60%;
+      top: 8%;
+      &:hover {
+        top: 7%;
+      }
+    }
+    .storage {
+      position: absolute;
+      left: 16%;
+      top: 26%;
+      width: 2.3rem;
+      &:hover {
+        top: 25%;
+      }
+    }
+    .right {
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 0.5rem;
+      font-weight: 500;
+      color: #fff;
+      text-shadow: 0rem 0rem 0.1rem #17caa5;
+    }
+  }
+  .architecture {
+    width: 11rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    display: flex;
+    .left {
+      width: 7rem;
+      // text-align: right;
+      > img {
+        width: 5rem;
+        transition: all 0.3s linear;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+    .right {
+      display: flex;
+      align-items: center;
+      // justify-content: center;
+      font-size: 0.5rem;
+      width: 4rem;
+      color: #fff;
+
+      span {
+        display: inline-block;
+        width: 2rem;
+        text-shadow: 0rem 0rem 0.1rem #17caa5;
+        transition: all 0.3s linear;
+        cursor: default;
+        &:hover {
+          margin-bottom: 0.2rem;
+        }
+      }
+    }
+  }
+  .dispatch {
+    width: 11rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    display: flex;
+    .left {
+      width: 7rem;
+      > img {
+        width: 6rem;
+        transition: all 0.3s linear;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+    .right {
+      width: 4rem;
+      display: flex;
+      align-items: center;
+      font-size: 0.5rem;
+      color: #fff;
+      span {
+        display: inline-block;
+        width: 2rem;
+        text-shadow: 0rem 0rem 0.1rem #17caa5;
+        transition: all 0.3s linear;
+        cursor: default;
+        &:hover {
+          margin-bottom: 0.2rem;
+        }
+      }
+    }
+  }
+  .hashrate {
+    width: 11rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    .left {
+      width: 5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      img {
+        width: 5rem;
+        transition: all 0.3s linear;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+      // .title {
+      //   font-size: 0.5rem;
+      //   line-height: 0.6rem;
+      //   margin-bottom: 0;
+      //   color: #333;
+      // }
+      // .text {
+      //   font-size: 0.2rem;
+      //   color: #999;
+      //   margin-top: 0.1rem;
+      // }
+    }
+    .right {
+      width: 5.5rem;
+      display: flex;
+      align-items: center;
+      .right_text {
+        width: 4.5rem;
+        transition: all 0.3s linear;
+        cursor: default;
+        &:hover {
+          margin-bottom: 0.2rem;
+        }
+        .title {
+          font-size: 0.5rem;
+          color: #fff;
+          text-shadow: 0rem 0rem 0.1rem #17caa5;
+          margin-bottom: 0;
+          line-height: 0.5rem;
+        }
+        .text {
+          font-size: 0.2rem;
+          color: #fff;
+          margin-top: 0.1rem;
+        }
+      }
+      // > div {
+      //   width: 3.8rem;
+      //   height: 2rem;
+      //   font-size: 0.4rem;
+      //   color: #fff;
+      //   text-align: right;
+      //   line-height: 2rem;
+      //   padding: 0 0.3rem;
+      // }
+      // .staking {
+      //   background: url("../../assets/img/home/staking.png");
+      //   background-size: 100% 100%;
+      //   margin-bottom: 0.15rem;
+      // }
+      // .mining {
+      //   background: url("../../assets/img/home/mining.png");
+      //   background-size: 100% 100%;
+      // }
+    }
+  }
+  .future {
+    width: 11rem;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.5rem;
+    color: #fff;
+    margin-top: 1rem;
+    font-weight: 500;
+    text-shadow: 0rem 0rem 0.1rem #17caa5;
+  }
+
+  // 球
+  .oneqiu {
+    position: absolute;
+    top: 2.5rem;
+    left: 50%;
+    transform: translateX(2.4rem);
+    width: 4.2rem;
+    height: 4.2rem;
+    background: url("../../assets/img/home/yuaner.png");
+    background-size: 100% 100%;
+  }
+  .twoqiu {
+    position: absolute;
+    top: 7rem;
+    left: 50%;
+    transform: translateX(-8.2rem);
+    width: 4.3rem;
+    height: 4.3rem;
+    background: url("../../assets/img/home/yuanone.png");
+    background-size: 100% 100%;
+  }
+  .therrqiu {
+    position: absolute;
+    top: 13.7rem;
+    left: 50%;
+    transform: translateX(2.05rem);
+    width: 3.5rem;
+    height: 3.5rem;
+    background: url("../../assets/img/home/yuaner.png");
+    background-size: 100% 100%;
+  }
+  .fourqiu {
+    position: absolute;
+    top: 18.5rem;
+    left: 50%;
+    transform: translateX(-4.2rem);
+    width: 4.4rem;
+    height: 4.4rem;
+    background: url("../../assets/img/home/yuanone.png");
+    background-size: 100% 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .home {
+    .top {
+      width: 100%;
+      height: auto;
+      padding: 0.5rem 0.3rem;
+
+      > h1 {
+        font-size: 1rem;
+        margin-bottom: 0;
+      }
+      p {
+        font-size: 0.3rem;
+        color: #fff;
+        font-weight: 600;
+      }
+    }
+    .we_want {
+      width: 100%;
+      height: 4.5rem;
+      .box {
+        width: 2.5rem;
+        font-size: 0.16rem;
+        color: #fff;
+        text-shadow: 0rem 0rem 0.2rem #17caa5;
+        text-align: center;
+      }
+      .cost {
+        position: absolute;
+        left: 0%;
+        top: 0%;
+      }
+      .latency {
+        position: absolute;
+        left: 20%;
+        top: 10%;
+      }
+      .massive {
+        position: absolute;
+        left: 40%;
+      }
+      .security {
+        position: absolute;
+        right: 0%;
+        top: 5%;
+      }
+      .operation {
+        position: absolute;
+        right: 5%;
+        top: 50%;
+      }
+      .colla {
+        position: absolute;
+        left: 60%;
+        top: 20%;
+      }
+      .storage {
+        position: absolute;
+        left: 0%;
+        top: 40%;
+        width: 2.3rem;
+      }
+      .right {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 0.5rem;
+        font-weight: 500;
+        color: #fff;
+        text-shadow: 0rem 0rem 0.1rem #17caa5;
+      }
+    }
+    .architecture {
+      width: 100%;
+      padding: 0 0.3rem;
+      flex-direction: column-reverse;
+      .left {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        > img {
+          width: 80%;
+        }
+      }
+      .right {
+        width: 100%;
+        span {
+          font-size: 30px;
+          width: 100%;
+          text-align: center;
+          margin-bottom: 0.3rem;
+        }
+      }
+    }
+    .dispatch {
+      width: 100%;
+      padding: 0 0.3rem;
+      flex-direction: column-reverse;
+      .left {
+        width: 100%;
+        text-align: center;
+        > img {
+          width: 80%;
+        }
+      }
+      .right {
+        width: 100%;
+        color: #fff;
+        margin-bottom: 0.3rem;
+        span {
+          font-size: 30px;
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+    .hashrate {
+      width: 100%;
+      padding: 0 0.3rem;
+      flex-direction: column-reverse;
+      .left {
+        width: 100%;
+        align-items: center;
+        > img {
+          width: 80%;
+        }
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        // .title {
+        //   font-size: 0.5rem;
+        //   line-height: 0.6rem;
+        //   margin-bottom: 0;
+        //   color: #333;
+        // }
+        // .text {
+        //   font-size: 0.3rem;
+        //   color: #999;
+        //   margin-top: 0.1rem;
+        // }
+      }
+      .right {
+        width: 100%;
+        .right_text {
+          text-align: center;
+          width: 100%;
+          .title {
+            font-size: 30px;
+          }
+          .text {
+            margin-top: 0.3rem;
+            font-size: 14px;
+          }
+        }
+        // > div {
+        //   width: 2.8rem;
+        //   height: 1.5rem;
+        //   font-size: 0.35rem;
+        //   color: #fff;
+        //   text-align: right;
+        //   line-height: 1.5rem;
+        //   padding: 0 0.1rem;
+        // }
+        // .staking {
+        //   background: url("../../assets/img/home/staking.png");
+        //   background-size: 100% 100%;
+        //   margin-bottom: 0.15rem;
+        // }
+        // .mining {
+        //   background: url("../../assets/img/home/mining.png");
+        //   background-size: 100% 100%;
+        // }
+      }
+    }
+    .future {
+      width: 100%;
+    }
+    .oneqiu {
+      width: 4.2rem;
+      height: 4.2rem;
+      top: 4rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .twoqiu {
+      width: 4.2rem;
+      height: 4.2rem;
+      top: 11rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .therrqiu {
+      width: 4.2rem;
+      height: 4.2rem;
+      top: 18rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .fourqiu {
+      width: 4.2rem;
+      height: 4.2rem;
+      top: 26.5rem;
+      left: 0%;
+      transform: translateX(0%);
+    }
+  }
+}

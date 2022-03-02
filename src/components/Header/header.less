@@ -1,0 +1,478 @@
+.header {
+  width: 100%;
+  height: 0.8rem;
+  background-color: #0e0e0e;
+  color: #fff;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .header_left {
+    height: 100%;
+    display: flex;
+    .logo {
+      display: flex;
+      align-items: center;
+      > img {
+        width: 0.4rem;
+        height: 0.4rem;
+      }
+      > span {
+        font-size: 0.18rem;
+        color: #fff;
+        font-weight: 700;
+      }
+    }
+    .menu {
+      margin-left: 0.5rem;
+      display: flex;
+      .menu_item {
+        height: 100%;
+        line-height: 0.8rem;
+        margin-left: 0.8rem;
+        cursor: pointer;
+        font-size: 0.18rem;
+        color: #fff;
+      }
+      .menu_item_active {
+        color: #17caa5;
+      }
+    }
+  }
+  .header_right {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    > div {
+      height: 0.3rem;
+      padding: 0 0.2rem;
+      line-height: 0.3rem;
+      border-radius: 0.15rem;
+      background-color: #17caa5;
+      margin-left: 0.28rem;
+      font-size: 0.16rem;
+      cursor: pointer;
+    }
+    .get {
+      padding: 0;
+      a {
+        display: block;
+        padding: 0 0.2rem;
+        height: 100%;
+        color: #fff;
+        font-size: 0.16rem;
+      }
+    }
+    .switch_chain {
+      position: relative;
+      cursor: default;
+      padding: 0;
+      .can {
+        width: 100%;
+        height: 100%;
+        padding: 0 0.2rem;
+      }
+      .downarr {
+        margin-left: 0.05rem;
+        width: 0.15rem;
+      }
+      .chain_list {
+        position: absolute;
+        top: 0.4rem;
+        left: 0;
+        width: 2rem;
+        padding: 0.2rem 0;
+        background-color: #fff;
+        z-index: 1;
+        border-radius: 0.08rem;
+        color: #000;
+        box-shadow: 0px 0.03rem 0.06rem 0px rgba(0, 0, 0, 0.16);
+        .network {
+          padding-bottom: 0.1rem;
+          padding-left: 0.2rem;
+          border-bottom: 1px solid #ccc;
+          margin-bottom: 0.1rem;
+        }
+        .chain_item {
+          line-height: 0.4rem;
+          cursor: pointer;
+          padding: 0 0.2rem;
+          display: flex;
+          align-items: center;
+          > img {
+            width: 0.3rem;
+            margin-right: 0.1rem;
+          }
+        }
+      }
+    }
+    .lang {
+      margin-left: 0.3rem;
+      position: relative;
+      .anticon-global {
+        font-size: 0.3rem;
+        color: #fff;
+        cursor: pointer;
+      }
+      .lang_list {
+        position: absolute;
+        top: 0.4rem;
+        right: 0;
+        border-radius: 0.08rem;
+        box-shadow: 0px 0.03rem 0.06rem 0px rgba(0, 0, 0, 0.16);
+        padding: 0.1rem 0.08rem;
+        background-color: #fff;
+        z-index: 1;
+        .lang_item {
+          color: #111;
+          white-space: nowrap;
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          .lang_title {
+            min-width: 1rem;
+            font-size: 0.16rem;
+          }
+          .circle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 0.14rem;
+            height: 0.14rem;
+            border: 0.02rem solid #17caa5;
+            border-radius: 50%;
+            margin-left: 0.05rem;
+            .circle_nei {
+              display: inline-block;
+              width: 0.07rem;
+              height: 0.07rem;
+              border-radius: 50%;
+              background-color: transparent;
+            }
+          }
+        }
+        .lang_item_active {
+          .circle {
+            .circle_nei {
+              background-color: #17caa5;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// 链接钱包弹窗
+.modal_matemask {
+  .matemask_con {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.3rem;
+    margin-bottom: 0.5rem;
+    .matemask {
+      width: 1.5rem;
+      height: auto;
+      > img {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+      .text {
+        font-size: 0.2rem;
+        text-align: center;
+        margin-top: 0.1rem;
+      }
+    }
+  }
+}
+
+// 链接成功之后的弹窗
+.your_wallet {
+  width: 6rem !important;
+  color: #000;
+  .your_wallet_con {
+    .one_line {
+      font-size: 0.16rem;
+    }
+    .two_line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.16rem;
+      margin-top: 0.2rem;
+      span {
+        img {
+          width: 0.35rem;
+          cursor: pointer;
+        }
+      }
+    }
+    .therr_line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.16rem;
+      margin-top: 0.2rem;
+      span .stat_num .ant-statistic-content {
+        font-size: 0.2rem;
+        color: #000;
+      }
+    }
+    .four_line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.16rem;
+      margin-top: 0.2rem;
+      span .stat_num .ant-statistic-content {
+        font-size: 0.2rem;
+        color: #000;
+      }
+    }
+    .five_line {
+      display: flex;
+      justify-content: flex-end;
+      font-size: 0.16rem;
+      margin: 0.2rem 0;
+      span {
+        a {
+          color: #17caa5;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    padding: 0 0.3rem;
+    .header_left {
+      .logo {
+        span {
+          font-size: 16px;
+        }
+      }
+    }
+    .header_right {
+      .icon {
+        font-size: 20px;
+        color: #000;
+        > img {
+          width: 0.5rem;
+        }
+      }
+    }
+  }
+  .drawer_ment {
+    .ant-drawer-content {
+      background-color: #f6f7f9;
+    }
+    .ant-drawer-body {
+      padding: 0;
+    }
+    .logo {
+      padding-left: 0.4rem;
+      margin-top: 0.5rem;
+      display: flex;
+      align-items: center;
+      > img {
+        width: 0.6rem;
+      }
+      > span {
+        margin-left: 0.2rem;
+        font-weight: 700;
+      }
+    }
+    .menu {
+      margin-top: 0.5rem;
+      .menu_item {
+        padding-left: 0.4rem;
+        height: 1rem;
+        line-height: 0.6rem;
+        font-size: 0.3rem;
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        color: #d1d1d1;
+        .icon {
+          width: 0.4rem;
+          margin-right: 0.2rem;
+        }
+      }
+      .menu_item_active {
+        color: #17caa5;
+      }
+    }
+    .line {
+      width: 100%;
+      border-bottom: 1px solid #ccc;
+      margin: 0.5rem 0;
+    }
+    .get {
+      margin-top: 0.7rem;
+      a {
+        display: inline-block;
+        width: 50%;
+        height: 0.6rem;
+        margin-left: 0.4rem;
+        text-align: center;
+        background-color: #17caa5;
+        line-height: 0.6rem;
+        border-radius: 0.3rem;
+        color: #fff;
+        font-size: 0.3rem;
+      }
+    }
+    .switch_chain {
+      width: 50%;
+      height: 0.6rem;
+      margin-left: 0.4rem;
+      text-align: center;
+      background-color: #17caa5;
+      line-height: 0.6rem;
+      border-radius: 0.3rem;
+      color: #fff;
+      font-size: 0.3rem;
+      margin-top: 0.2rem;
+      position: relative;
+      .car {
+        .downarr {
+          margin-left: 0.1rem;
+          width: 0.2rem;
+        }
+      }
+      .chain_list {
+        position: absolute;
+        top: 0.8rem;
+        width: 3rem;
+        padding: 0.2rem 0;
+        background-color: #fff;
+        z-index: 1;
+        border-radius: 0.08rem;
+        color: #000;
+        box-shadow: 0px 0.03rem 0.06rem 0px rgba(0, 0, 0, 0.16);
+        .network {
+          text-align: left;
+          padding-bottom: 0.1rem;
+          padding-left: 0.2rem;
+          border-bottom: 1px solid #ccc;
+          margin-bottom: 0.1rem;
+        }
+        .chain_item {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          padding-left: 0.2rem;
+          > img {
+            width: 0.4rem;
+            margin-right: 0.1rem;
+          }
+        }
+      }
+    }
+    .lang {
+      position: absolute;
+      bottom: 2rem;
+      margin-left: 0.4rem;
+      font-size: 0.5rem;
+      color: #17caa5;
+    }
+    .connect_wallet {
+      position: absolute;
+      bottom: 1rem;
+      width: calc(100% - 0.8rem);
+      height: 0.6rem;
+      margin-left: 0.4rem;
+      text-align: center;
+      background-color: #17caa5;
+      line-height: 0.6rem;
+      border-radius: 0.3rem;
+      color: #fff;
+      font-size: 0.3rem;
+    }
+  }
+
+  .modal_matemask {
+    .matemask_con {
+      .matemask {
+        width: 2rem;
+        > img {
+          width: 2rem;
+          height: 2rem;
+        }
+        .text {
+          font-size: 0.35rem;
+        }
+      }
+    }
+  }
+  .your_wallet {
+    width: calc(100% - 0.6rem) !important;
+    .your_wallet_con {
+      .one_line {
+        font-size: 0.3rem;
+      }
+      .two_line {
+        font-size: 0.3rem;
+        word-break: break-all;
+        span {
+          img {
+            width: 0.5rem;
+            cursor: pointer;
+            margin-left: 0.5rem;
+          }
+        }
+      }
+      .therr_line {
+        font-size: 0.3rem;
+        span .stat_num .ant-statistic-content {
+          font-size: 0.35rem;
+        }
+      }
+      .four_line {
+        font-size: 0.3rem;
+        span .stat_num .ant-statistic-content {
+          font-size: 0.35rem;
+        }
+      }
+      .five_line {
+        font-size: 0.3rem;
+      }
+    }
+  }
+
+  .modal_drawerlang {
+    .item {
+      width: 100%;
+      font-size: 0.3rem;
+      display: flex;
+      align-items: center;
+      .title {
+        flex: 1;
+      }
+      .quan {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 0.3rem;
+        height: 0.3rem;
+        border: 2px solid #17caa5;
+        border-radius: 50%;
+        .quan_nei {
+          display: inline-block;
+          width: 0.16rem;
+          height: 0.16rem;
+          border-radius: 50%;
+          background-color: transparent;
+        }
+      }
+    }
+    .item_active {
+      .quan {
+        .quan_nei {
+          background-color: #17caa5;
+        }
+      }
+    }
+  }
+}

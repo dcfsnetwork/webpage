@@ -1,0 +1,801 @@
+.list_item {
+  width: 3.66rem;
+  height: auto;
+  margin-right: 0.51rem;
+  margin-top: 0.8rem;
+  border-radius: 0.08rem;
+  align-self: baseline;
+  box-shadow: 0px 0.06rem 0.1rem 0px rgba(0, 0, 0, 0.16);
+  border: 1px solid #17caa5;
+  box-shadow: 0px 0px 10px #17caa5;
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+  .tit {
+    width: 100%;
+    height: 0.8rem;
+    border-radius: 0.08rem 0.08rem 0 0;
+    padding: 0.2rem 0.15rem 0;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    .left {
+      position: relative;
+      > img {
+        position: absolute;
+        top: -0.5rem;
+        width: 1.2rem;
+        height: auto;
+        // margin-right: 0.15rem;
+        // &:last-child {
+        //   margin-right: 0;
+        // }
+      }
+    }
+    .right {
+      font-size: 0.18rem;
+      color: #17caa5;
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+      font-weight: 700;
+      .right_iden {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        height: 0.2rem;
+        line-height: 0.2rem;
+        padding: 0 0.1rem;
+        border-radius: 0.15rem;
+        // border: 2px solid #17caa5;
+        background: linear-gradient(-90deg, #42e6b4 0%, #bbf5f5 100%);
+        font-size: 0.14rem;
+        text-align: center;
+        color: #181e0f;
+        font-weight: 400;
+        // > img {
+        //   height: 0.15rem;
+        // }
+      }
+    }
+    .crowd {
+      position: absolute;
+      right: 0;
+      top: -0.45rem;
+      width: auto;
+      padding: 0 0.1rem;
+      height: 0.25rem;
+      border-radius: 0.13rem;
+      // background-color: #17caa5;
+      text-align: center;
+      line-height: 0.22rem;
+      color: #17caa5;
+      font-size: 0.16rem;
+      border: 1px solid #17caa5;
+      font-weight: 500;
+    }
+  }
+  .list_item_con {
+    padding: 0 0.3rem 0.1rem;
+    // background-color: #fff;
+
+    .line {
+      display: flex;
+      height: 0.3rem;
+      line-height: 0.3rem;
+      justify-content: space-between;
+      font-size: 0.14rem;
+      color: #ffffff;
+      margin-bottom: 0.1rem;
+      border: 1px solid #17caa5;
+      border-radius: 0.15rem;
+      padding: 0 0.1rem;
+
+      span {
+        &:last-child {
+          font-weight: 700;
+          color: #17caa5;
+        }
+      }
+    }
+    .therr_line {
+      display: flex;
+      justify-content: space-between;
+      margin: 0rem 0;
+      .earned,
+      .stake {
+        .title {
+          height: 0.18rem;
+          font-size: 0.14rem;
+          color: #fff;
+          padding: 0 0.1rem;
+        }
+        .num {
+          margin-top: 0.1rem;
+          margin-left: 0.1rem;
+          .stat_num {
+            .ant-statistic-content {
+              font-size: 0.18rem;
+              color: #17caa5;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+      .stake {
+        .num {
+          text-align: right;
+        }
+      }
+      .harvest_btn {
+        margin-top: 0.18rem;
+        padding: 0 0.1rem;
+        height: 0.35rem;
+        line-height: 0.35rem;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 0.18rem;
+        border: 1px solid #17caa5;
+        color: #fff;
+        font-size: 0.18rem;
+        font-weight: 700;
+        .time_later {
+          display: flex;
+          align-items: center;
+          .ant-statistic-content {
+            font-size: 0.18rem;
+            color: #fff;
+          }
+        }
+      }
+      .harvest_btn_dis {
+        border: 1px solid #f0f0f0;
+        background-color: #f0f0f0;
+        color: #bbb;
+        cursor: no-drop;
+        .time_later {
+          .ant-statistic-content {
+            color: #bbb;
+          }
+        }
+      }
+    }
+    .four_line {
+      .title {
+        font-size: 0.14rem;
+        color: #fff;
+        padding: 0 0.1rem;
+        margin-bottom: 0.1rem;
+        .available_time {
+          display: flex;
+          .ant-statistic-content {
+            font-size: 0.14rem;
+            color: #fff;
+          }
+        }
+      }
+      .nr {
+        height: 0.4rem;
+        margin-top: 0rem;
+        .approve {
+          width: 100%;
+          height: 0.4rem;
+          text-align: center;
+          line-height: 0.4rem;
+          font-size: 0.18rem;
+          cursor: pointer;
+          border-radius: 0.2rem;
+          border: 1px solid #17caa5;
+          color: #fff;
+          font-weight: 700;
+        }
+        .num_data {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-left: 0.1rem;
+          .num {
+            .stat_num {
+              .ant-statistic-content {
+                font-size: 0.18rem;
+                font-weight: bold;
+                color: #17caa5;
+              }
+            }
+          }
+          .cz {
+            display: flex;
+            > div {
+              min-width: 0.54rem;
+              height: 0.36rem;
+              cursor: pointer;
+              font-size: 0.18rem;
+              border: 1px solid #17caa5;
+              color: #17caa5;
+              border-radius: 0.18rem;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              .sub_show_time {
+                display: flex;
+                align-items: center;
+                padding: 0 0.1rem;
+
+                .ant-statistic-content {
+                  font-size: 0.18rem;
+                  color: #17caa5;
+                }
+              }
+              &:first-child {
+                margin-right: 0.2rem;
+              }
+              &:hover {
+                background-color: #17caa5;
+                color: #fff;
+                .sub_show_time {
+                  .ant-statistic-content {
+                    color: #fff;
+                  }
+                }
+              }
+            }
+            .sub_dis,
+            .sub_dis:hover,
+            .sub_dis:focus {
+              border: 1px solid #f0f0f0;
+              background-color: #f0f0f0;
+              color: #bbb;
+              cursor: no-drop;
+              .sub_show_time {
+                .ant-statistic-content {
+                  color: #bbb;
+                }
+              }
+            }
+          }
+        }
+        .harvest_all {
+          display: flex;
+          justify-content: space-between;
+          .Harvest_all_btn {
+            width: 1.2rem;
+            height: 0.36rem;
+            text-align: center;
+            line-height: 0.36rem;
+            border-radius: 0.18rem;
+            background-color: #17caa5;
+            cursor: pointer;
+            color: #fff;
+            font-size: 0.18rem;
+          }
+          .add {
+            width: 0.54rem;
+            height: 0.36rem;
+            cursor: pointer;
+            font-size: 0.18rem;
+            border: 1px solid #17caa5;
+            color: #17caa5;
+            border-radius: 0.18rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover {
+              background-color: #17caa5;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+  .fold_box {
+    width: 100%;
+    padding: 0 0.3rem;
+  }
+  .fold_active {
+    width: 100%;
+    border-radius: 0.2rem;
+    color: #000;
+    overflow: hidden;
+    margin-bottom: 0.2rem;
+    border: 1px solid #11a1dc;
+    .oper_fold {
+      width: 100%;
+      height: 0.4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.16rem;
+      cursor: pointer;
+      border-radius: 0.2rem;
+      color: #11a1dc;
+      font-weight: 700;
+      > img {
+        width: 0.12rem;
+        margin-left: 0.2rem;
+        margin-top: 0.05rem;
+      }
+
+      .rotate {
+        transform: rotateZ(0deg);
+        transition: all 0.3s;
+      }
+      .rotate_fan {
+        transform: rotateZ(180deg);
+        transition: all 0.3s;
+      }
+    }
+    .fold_con {
+      height: 1.3rem;
+      transition: all 0.2s;
+      .totalSta {
+        width: 100%;
+        padding: 0 0.2rem;
+        padding-bottom: 0.05rem;
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.16rem;
+        color: #11a1dc;
+        font-weight: 700;
+        .num {
+          .stat_num {
+            .ant-statistic-content {
+              font-size: 0.16rem;
+              color: #11a1dc;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+      .get {
+        font-size: 0.16rem;
+        padding: 0 0.2rem;
+        padding-bottom: 0.05rem;
+        a {
+          color: #fff;
+        }
+      }
+      .contract {
+        font-size: 0.16rem;
+        padding: 0 0.2rem;
+        > a {
+          color: #fff;
+        }
+      }
+    }
+    .fold_con_active {
+      height: 0;
+    }
+  }
+}
+
+// 减/加的弹窗
+.modal_sub,
+.modal_add {
+  .sub_con,
+  .add_con {
+    width: 100%;
+    height: 1.5rem;
+    box-shadow: 0px 0.06rem 0.1rem 0px rgba(0, 0, 0, 0.16);
+    border-radius: 0.08rem;
+    padding: 0.25rem;
+    color: #000;
+    .one_line {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.16rem;
+    }
+    .two_line {
+      display: flex;
+      margin-top: 0.3rem;
+      .input {
+        width: 50%;
+        height: 0.4rem;
+        padding: 0;
+        font-size: 0.2rem;
+        color: #000;
+      }
+      .max {
+        width: 0.8rem;
+        display: flex;
+        align-items: center;
+        span {
+          display: inline-block;
+          width: 0.8rem;
+          height: 0.3rem;
+          background-color: #17caa5;
+          border-radius: 0.15rem;
+          font-size: 0.16rem;
+          text-align: center;
+          line-height: 0.3rem;
+          color: #fff;
+          cursor: pointer;
+        }
+      }
+      .curr_name {
+        flex: 1;
+        text-align: right;
+        font-size: 0.16rem;
+        line-height: 0.4rem;
+      }
+    }
+  }
+}
+
+// Harvest All的弹窗
+.modal_harvest {
+  p {
+    font-size: 0.16rem;
+  }
+  .harvest_con {
+    width: 100%;
+    height: 2.5rem;
+    display: flex;
+    border-radius: 0.08rem;
+    box-shadow: 0px 0.06rem 0.1rem 0px rgba(0, 0, 0, 0.16);
+
+    .box {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      > img {
+        width: 0.6rem;
+        height: 0.6rem;
+        margin-bottom: 0.2rem;
+      }
+      .num .stat_num .ant-statistic-content {
+        font-size: 0.24rem;
+        color: #000;
+      }
+      .title {
+        font-size: 0.2rem;
+        margin-top: 0.2rem;
+      }
+    }
+  }
+}
+
+// 减带说明的弹窗
+.modal_unstake {
+  p {
+    font-size: 0.16rem;
+  }
+  .unstake {
+    width: 100%;
+    height: 2.2rem;
+    display: flex;
+    justify-content: space-between;
+    .box {
+      width: 2.2rem;
+      height: 2.2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0.08rem;
+      box-shadow: 0px 0.06rem 0.1rem 0px rgba(0, 0, 0, 0.16);
+      > img {
+        width: 0.6rem;
+        height: 0.6rem;
+      }
+      .num .stat_num .ant-statistic-content {
+        font-size: 0.24rem;
+        color: #000;
+      }
+      .title {
+        font-size: 0.2rem;
+        margin-top: 0.15rem;
+      }
+    }
+  }
+}
+.ant-tooltip-inner {
+  background-color: #0e0e0e;
+  color: #17caa5;
+  border: 1px solid #17caa5;
+}
+.ant-tooltip-arrow {
+  .ant-tooltip-arrow-content {
+    background: #17caa5;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .list_item {
+    width: 100%;
+    margin-top: 1.2rem;
+    .tit {
+      height: 1.5rem;
+      border-radius: 0.08rem 0.08rem 0 0;
+      // background-color: #f0f0f0;
+      padding: 0.3rem 0.15rem 0;
+      .left {
+        > img {
+          width: 2rem;
+          top: -1rem;
+          // margin-right: 0.2rem;
+        }
+      }
+      .right {
+        font-size: 0.3rem;
+        .right_iden {
+          height: 0.5rem;
+          line-height: 0.5rem;
+          border-radius: 0.25rem;
+          font-size: 0.24rem;
+          > img {
+            height: 0.3rem;
+          }
+        }
+      }
+      .crowd {
+        top: -0.7rem;
+        width: 1.5rem;
+        height: 0.5rem;
+        border-radius: 0.5rem;
+        line-height: 0.5rem;
+        font-size: 0.26rem;
+      }
+    }
+    .list_item_con {
+      padding: 0.3rem;
+      // background-color: #fff;
+
+      .line {
+        height: 0.5rem;
+        line-height: 0.5rem;
+        border-radius: 0.25rem;
+        padding: 0 0.2rem;
+        font-size: 0.26rem;
+        margin-bottom: 0.3rem;
+      }
+      .therr_line {
+        margin: 0.35rem 0;
+        .earned,
+        .stake {
+          .title {
+            height: 0.18rem;
+            font-size: 0.26rem;
+            color: #fff;
+            padding: 0 0.2rem;
+          }
+          .num {
+            margin-top: 0.2rem;
+            margin-left: 0.2rem;
+            .stat_num {
+              .ant-statistic-content {
+                font-size: 0.32rem;
+              }
+            }
+          }
+        }
+        .stake {
+          .num {
+            text-align: right;
+          }
+        }
+        .harvest_btn {
+          padding: 0 0.2rem;
+          height: 0.5rem;
+          line-height: 0.5rem;
+          border-radius: 0.25rem;
+          font-size: 0.3rem;
+          .time_later {
+            .ant-statistic-content {
+              font-size: 0.3rem;
+            }
+          }
+        }
+      }
+      .four_line {
+        .title {
+          font-size: 0.26rem;
+          padding: 0 0.2rem;
+          .available_time {
+            .ant-statistic-content {
+              font-size: 0.26rem;
+            }
+          }
+        }
+        .nr {
+          height: 0.6rem;
+          margin-top: 0.35rem;
+
+          .approve {
+            height: 0.6rem;
+            line-height: 0.6rem;
+            font-size: 0.3rem;
+            border-radius: 0.3rem;
+          }
+          .num_data {
+            padding-left: 0.2rem;
+            .num {
+              .stat_num {
+                .ant-statistic-content {
+                  font-size: 0.3rem;
+                }
+              }
+            }
+            .cz {
+              display: flex;
+              > div {
+                min-width: 0.8rem;
+                height: 0.5rem;
+                font-size: 0.3rem;
+                border-radius: 0.25rem;
+                .sub_show_time {
+                  .ant-statistic-content {
+                    font-size: 0.3rem;
+                  }
+                }
+                &:first-child {
+                  margin-right: 0.4rem;
+                }
+              }
+            }
+          }
+          .harvest_all {
+            display: flex;
+            justify-content: space-between;
+            .Harvest_all_btn {
+              width: 2rem;
+              height: 0.5rem;
+              text-align: center;
+              line-height: 0.5rem;
+              border-radius: 0.25rem;
+              background-color: #17caa5;
+              cursor: pointer;
+              color: #fff;
+              font-size: 0.3rem;
+            }
+            .add {
+              width: 0.8rem;
+              height: 0.5rem;
+              font-size: 0.3rem;
+              border-radius: 0.25rem;
+            }
+          }
+        }
+      }
+    }
+    .fold_box {
+      box-sizing: border-box;
+    }
+    .fold_active {
+      // height: 0.6rem;
+      border-radius: 0.3rem;
+      box-sizing: border-box;
+      .oper_fold {
+        font-size: 0.3rem;
+        height: 0.56rem;
+        > img {
+          width: 0.2rem;
+        }
+      }
+      .fold_con {
+        height: 2.2rem;
+        transition: all 0.2s;
+        .totalSta {
+          padding-bottom: 0.05rem;
+          font-size: 0.3rem;
+          .num {
+            .stat_num {
+              .ant-statistic-content {
+                font-size: 0.3rem;
+              }
+            }
+          }
+        }
+        .get {
+          font-size: 0.3rem;
+        }
+        .contract {
+          font-size: 0.3rem;
+          > a {
+            color: #fff;
+          }
+        }
+      }
+      .fold_con_active {
+        height: 0;
+      }
+    }
+  }
+  // 减/加的弹窗
+  .modal_sub,
+  .modal_add {
+    .sub_con,
+    .add_con {
+      height: 2.5rem;
+      .one_line {
+        font-size: 0.32rem;
+      }
+      .two_line {
+        display: flex;
+        margin-top: 0.6rem;
+        .input {
+          width: 40%;
+          height: 0.5rem;
+          padding: 0;
+          font-size: 0.32rem;
+          color: #000;
+        }
+        .max {
+          width: 1rem;
+          display: flex;
+          align-items: center;
+          span {
+            width: 1rem;
+            height: 0.5rem;
+            border-radius: 0.25rem;
+            font-size: 0.3rem;
+            line-height: 0.5rem;
+          }
+        }
+        .curr_name {
+          flex: 1;
+          text-align: right;
+          font-size: 0.3rem;
+          line-height: 0.5rem;
+        }
+      }
+    }
+  }
+  // Harvest All的弹窗
+  .modal_harvest {
+    p {
+      font-size: 0.3rem;
+    }
+    .harvest_con {
+      width: 100%;
+      height: 3.5rem;
+
+      .box {
+        width: 50%;
+        > img {
+          width: 0.9rem;
+          height: 0.9rem;
+        }
+        .num .stat_num .ant-statistic-content {
+          font-size: 0.32rem;
+          color: #000;
+        }
+        .title {
+          font-size: 0.32rem;
+        }
+      }
+    }
+  }
+  // 减带说明的弹窗
+  .modal_unstake {
+    p {
+      font-size: 0.3rem;
+    }
+    .unstake {
+      width: 100%;
+      height: 3rem;
+      display: flex;
+      justify-content: space-between;
+      .box {
+        width: 47%;
+        height: 2.8rem;
+        > img {
+          width: 0.9rem;
+          height: 0.9rem;
+        }
+        .num .stat_num .ant-statistic-content {
+          font-size: 0.32rem;
+        }
+        .title {
+          font-size: 0.32rem;
+        }
+      }
+    }
+  }
+}
